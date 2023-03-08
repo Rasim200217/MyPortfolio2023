@@ -9,6 +9,7 @@ import { FiBookOpen } from "react-icons/fi";
 import { TbPacman } from "react-icons/tb";
 import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineBarChart } from "react-icons/ai";
+import Button from "./Button";
 
 type Props = {};
 
@@ -63,6 +64,14 @@ function About({}: Props) {
               <div>Узбекистан, Ташкент</div>
             </div>
           </div>
+
+    <div className=" max-w-[800px]">
+
+      <h2 className=" font-bold mt-16 mb-10">Меня зовут Расим, я маркетолог</h2>
+      <p className=" text-gray-600"> Я работаю в компании, которая продает строительные материалы. Как маркетолог, я занимаюсь исследованием рынка, определяю потребности нашей целевой аудитории, разрабатываю маркетинговые стратегии и настраиваю рекламные кампании для продвижения нашей продукции. Так же занимаюсь создание физуальной части бренда.</p>
+      <Button link="#" text="Подробнее" />
+    </div>
+
         </div>
       </div>
     </section>
