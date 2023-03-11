@@ -21,18 +21,23 @@ function Navbar({}: Props) {
           <Link className="hover:text-[#ff4D41]" href="/portfolio">
             Портфолио
           </Link>
-          <Link className="hover:text-[#ff4D41]" href="/blog">
-            Блог
-          </Link>
         </div>
 
-        <a
-          download
-          href="../public/Resume.pdf"
-          className="hidden md:flex border border-[#ff4D41] px-4 py-1 text-[#ff4D41] rounded-[5px] items-center gap-2 hover:bg-[#ff4D41] hover:text-white transition duration-200"
-        >
-          <TbFileDownload /> Скачать CV
-        </a>
+        <div className="grid grid-cols-2 gap-3">
+          <a
+            href="tel:+998903487181"
+            className="hidden md:flex border border-[#ff4D41] px-4 py-1 text-[#ff4D41] rounded-[5px] items-center gap-2 hover:bg-[#ff4D41] hover:text-white transition duration-200"
+          >
+            +998 (90) 348 71 81
+          </a>
+          <a
+            download
+            href="../public/Resume.pdf"
+            className="hidden md:flex border border-[#ff4D41] px-4 py-1 text-[#ff4D41] rounded-[5px] items-center gap-2 hover:bg-[#ff4D41] hover:text-white transition duration-200"
+          >
+            <TbFileDownload /> Скачать CV
+          </a>
+        </div>
 
         <div className="md:hidden text-[24px]">
           <FiMenu />

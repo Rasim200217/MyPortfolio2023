@@ -11,7 +11,7 @@ type Props = {};
 
 function WhatIDo({}: Props) {
   return (
-    <section className=" container mx-auto py-10 px-4">
+    <section className="container mx-auto py-10 px-4">
       <Heading title="Что я умею?" />
 
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">

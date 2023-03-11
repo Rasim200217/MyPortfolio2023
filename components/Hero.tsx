@@ -39,8 +39,10 @@ function Hero({}: Props) {
               используя современные технологии. Ключевые навыки: работа в
               команде, креативность и аналитическое мышление.
             </p>
-
-            <Button link="tel:+998903487181" text="Позвонить" />
+            <div className="flex justify-between w-[55%]">
+              <Button link="tel:+998903487181" text="Позвонить" />
+              <Button link="https://t.me/Rasim200217" text="Телеграмм" />
+            </div>
           </div>
         </div>
       </div>

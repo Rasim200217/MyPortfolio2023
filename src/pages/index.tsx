@@ -6,6 +6,9 @@ import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import About from "../../components/About";
 import WhatIDo from "../../components/WhatIDo";
+import Skills from "../../components/Skills";
+import Work from "../../components/Work";
+import Footer from "../../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +33,13 @@ export default function Home() {
         <Hero />
         <About />
         <WhatIDo />
+        <Skills />
+        <Work />
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
