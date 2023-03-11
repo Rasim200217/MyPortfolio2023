@@ -27,7 +27,8 @@ function Navbar({}: Props) {
         </div>
 
         <a
-          href="#"
+          download
+          href="../public/Resume.pdf"
           className="hidden md:flex border border-[#ff4D41] px-4 py-1 text-[#ff4D41] rounded-[5px] items-center gap-2 hover:bg-[#ff4D41] hover:text-white transition duration-200"
         >
           <TbFileDownload /> Скачать CV
