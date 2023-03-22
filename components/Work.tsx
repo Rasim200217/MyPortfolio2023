@@ -8,7 +8,7 @@ type Props = {};
 
 function Work({}: Props) {
   return (
-    <section className="container mx-auto py-10 px-4">
+    <section className="container mx-auto py-10 px-4" id="portfolio">
       <Heading title="Мои работы" />
 
       <div className="grid grid-cols-3 gap-4">

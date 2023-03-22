@@ -6,7 +6,7 @@ import { FiMenu } from "react-icons/fi";
 
 type Props = {};
 
-function Navbar({}: Props) {
+function Navbar(props: {toggleSidebar: any}) {
   return (
     <div className=" bg-white fixed top-0 w-[100%] z-10">
       <div className=" container mx-auto flex justify-between items-center py-4 px-4">
@@ -15,10 +15,10 @@ function Navbar({}: Props) {
           <Link className="hover:text-[#ff4D41]" href="/">
             Главная
           </Link>
-          <Link className="hover:text-[#ff4D41]" href="/about">
+          <Link className="hover:text-[#ff4D41]" href="#about">
             Обо мне
           </Link>
-          <Link className="hover:text-[#ff4D41]" href="/portfolio">
+          <Link className="hover:text-[#ff4D41]" href="#portfolio">
             Портфолио
           </Link>
         </div>
@@ -39,7 +39,7 @@ function Navbar({}: Props) {
           </a>
         </div>
 
-        <div className="md:hidden text-[24px]">
+        <div className="md:hidden text-[24px]" onClick={props.toggleSidebar}>
           <FiMenu />
         </div>
       </div>

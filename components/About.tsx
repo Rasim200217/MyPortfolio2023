@@ -15,7 +15,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <section className=" container mx-auto py-10 px-4">
+    <section className=" container mx-auto py-10 px-4" id="about">
       <Heading title="Обо мне" />
 
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-[60px]">

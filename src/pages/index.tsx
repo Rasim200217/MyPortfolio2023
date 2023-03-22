@@ -9,10 +9,20 @@ import WhatIDo from "../../components/WhatIDo";
 import Skills from "../../components/Skills";
 import Work from "../../components/Work";
 import Footer from "../../components/Footer";
+import { useState } from "react";
+import Sidebar from "../../components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+
+const [isOpen, setIsOpen] = useState(false);
+
+const toggleSidebar = () => {
+  setIsOpen(!isOpen);
+}
+
   return (
     <>
       <Head>
@@ -26,10 +36,11 @@ export default function Home() {
       </Head>
 
       <header>
-        <Navbar />
+        <Navbar toggleSidebar={toggleSidebar}/>
       </header>
 
       <main>
+        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <Hero />
         <About />
         <WhatIDo />
